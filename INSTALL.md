@@ -1,6 +1,6 @@
 # DVerseClaudeSkills
 
-Sample Microsoft Dataverse backend components generated using **Claude Code** with the `d365-architect-v3` skill. Covers PreValidation plug-ins, Dataverse workflow extensions, and Custom API patterns — each with an isolated VS project, unit tests, and documentation.
+Sample Microsoft Dataverse backend components generated using **Claude Code** with the `d365-architect` skill. Covers PreValidation plug-ins, Dataverse workflow extensions, and Custom API patterns — each with an isolated VS project, unit tests, and documentation.
 
 ---
 
@@ -18,25 +18,43 @@ Sample Microsoft Dataverse backend components generated using **Claude Code** wi
 
 ## Installing the Skill in Claude Code
 
-The `d365-architect-v3` skill provides domain-grounded Dataverse architecture and implementation guidance inside Claude Code.
+The `d365-architect` skill provides domain-grounded Dataverse architecture and implementation guidance inside Claude Code. The skill definition is included in this repo under `d365-architect/`.
 
-### 1. Open Claude Code
+### 1. Clone this repo
+
+```bash
+git clone https://github.com/tbalt88/DVerseClaudeSkills.git
+```
+
+### 2. Copy the skill into Claude Code's skills folder
+
+**Windows (PowerShell):**
+```powershell
+Copy-Item -Recurse "DVerseClaudeSkills\d365-architect" "$env:USERPROFILE\.claude\skills\d365-architect"
+```
+
+**Mac / Linux:**
+```bash
+cp -r DVerseClaudeSkills/d365-architect ~/.claude/skills/d365-architect
+```
+
+Claude Code automatically discovers skills placed in `~/.claude/skills/`.
+
+### 3. Open Claude Code
 
 ```bash
 claude
 ```
 
-### 2. Load the skill
+### 4. Invoke the skill
 
 In the Claude Code prompt, type:
 
 ```
-/skills
+/d365-architect
 ```
 
-Select **d365-architect-v3** from the skill list and load it.
-
-### 3. Set your project context
+### 5. Set your project context
 
 On first use, tell Claude Code your project conventions once:
 
