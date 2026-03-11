@@ -1,0 +1,21 @@
+# Build output
+bin/
+obj/
+*.user
+*.suo
+
+# NuGet
+packages/
+*.nupkg
+project.lock.json
+
+# Strong-name keys — do not commit
+*.snk
+
+# VS
+.vs/
+*.rsuser
+
+# OS
+Thumbs.db
+.DS_Store

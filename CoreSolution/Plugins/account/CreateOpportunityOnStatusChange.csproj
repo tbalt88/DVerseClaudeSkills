@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>Dexx.CoreSolution.Plugins.CreateOpportunityOnStatusChange</AssemblyName>
+    <RootNamespace>Dexx.CoreSolution.Plugins</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>9.0</LangVersion>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Activities" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.49" />
+    <PackageReference Include="Microsoft.CrmSdk.Workflow"       Version="9.0.2.49" />
+  </ItemGroup>
+
+</Project>

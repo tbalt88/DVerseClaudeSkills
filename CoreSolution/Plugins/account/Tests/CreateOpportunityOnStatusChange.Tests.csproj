@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <AssemblyName>Dexx.CoreSolution.Plugins.CreateOpportunityOnStatusChange.Tests</AssemblyName>
+    <RootNamespace>Dexx.CoreSolution.Plugins.account.Tests</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>9.0</LangVersion>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Activities" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk"          Version="17.8.0" />
+    <PackageReference Include="xunit"                           Version="2.6.6" />
+    <PackageReference Include="xunit.runner.visualstudio"       Version="2.6.6">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Moq"                             Version="4.20.70" />
+    <PackageReference Include="Microsoft.CrmSdk.CoreAssemblies" Version="9.0.2.49" />
+    <PackageReference Include="Microsoft.CrmSdk.Workflow"       Version="9.0.2.49" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CreateOpportunityOnStatusChange.csproj" />
+  </ItemGroup>
+
+</Project>
